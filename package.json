@@ -1,0 +1,39 @@
+{
+  "name": "@lavacoffee/types",
+  "version": "0.1.0",
+  "description": "A set of lavalink types",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "test": "npm run lint",
+    "build": "rimraf dist && tsc",
+    "lint": "eslint --ext .ts src",
+    "docs": "typedoc src/index.ts --excludePrivate --excludeInternal --excludeExternals"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavacoffee/types.git"
+  },
+  "keywords": [
+    "lavalink",
+    "lavalink-types",
+    "lavacoffee",
+    "typescript"
+  ],
+  "author": "azusfin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lavacoffee/types/issues"
+  },
+  "homepage": "https://github.com/lavacoffee/types#readme",
+  "devDependencies": {
+    "@hazmi35/eslint-config": "^8.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.22.11",
+    "typescript": "^4.5.4"
+  }
+}
